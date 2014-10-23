@@ -2,6 +2,19 @@
   <h1>People</h1>
 </div>
 
+<table class="table">
+  <thead>
+    <tr>
+      <td><%= link_to "Sort By Eye Color", root_path(sort_by: 'eye_color') %></td>
+      <td><%= link_to "Sort By First Name", root_path(sort_by: 'first_name') %></td>
+      <td><%= link_to "Sort By Last Name", root_path(sort_by: 'last_name') %></td>
+      <td><%= link_to "Sort By Date of Birth", root_path(sort_by: 'date_of_birth') %></td>
+      <td><%= link_to "Only Awesomeness", root_path(sort_by: 'awesome') %></td>
+      <td><%= link_to "Remove Sort", root_path %></td>
+    </tr>
+  </thead>
+</table>
+
 <table class="table table-bordered">
   <thead>
     <tr>
